@@ -97,7 +97,7 @@ export const writeTypeSpecificSchemas = (
 				`const literalSchema = z.union([z.string(), z.number(), z.boolean()${
 					config.prismaJsonNullability ? '' : ', z.null()'
 				}])`,
-				'const jsonSchema: z.ZodSchema<Json> = z.lazy(() => z.union([literalSchema, z.array(jsonSchema), z.record(jsonSchema)]))',
+				'const jsonSchema: z.ZodSchema<Json> = z.lazy(() => z.union([literalSchema, z.array(jsonSchema), z.record(z.string(), jsonSchema)]))',
 			])
 		})
 	}
