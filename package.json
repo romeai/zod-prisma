@@ -1,5 +1,5 @@
 {
-	"name": "@romeai/zod-prisma",
+	"name": "@rome-ai/zod-prisma",
 	"version": "0.5.4-romeai",
 	"description": "A Prisma generator that creates Zod schemas for all of your models",
 	"license": "MIT",
@@ -8,9 +8,6 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/romeai/zod-prisma.git"
-	},
-	"publishConfig": {
-		"registry": "https://npm.pkg.github.com"
 	},
 	"bugs": {
 		"url": "https://github.com/CarterGrimmeisen/zod-prisma/issues"
